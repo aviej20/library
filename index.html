@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
+</head>
+<body>
+
+  <script src="script.js">
+  </script>
+
+  <header>
+    <h1>My Library</h1>
+  </header>
+
+  <main>
+    <div class="add-book">
+      <button class="add-btn" onClick="openForm()">+ Add Book</button>
+    </div>
+    
+    <div class="form-container">
+      <form>
+        
+        <div class="close-button">
+          <button onClick="closeForm()">x</button>
+        </div>
+        
+        <div>
+          <label for="title">
+            Title
+          </label>
+          <input type="text" id="title" required>
+        </div>
+          
+        <div>
+          <label for="author">
+            Author
+          </label>
+          <input type="text" id="author" required>
+        </div>
+        
+        <div>
+          <label for="pages">
+            Pages
+          </label>
+          <input type="text" id="pages" required>
+        </div>
+        
+        <div class="read-form-input">
+          <label for="read">
+            Read?
+          </label>
+          <input type="checkbox" id="read">
+        </div>
+
+        <div class="submit">
+          <button type="submit" onClick="addBookToLibrary()">Submit</button>
+        </div>
+
+      </form>
+      
+    </div>
+    
+    <div class="book-collection">
+      <h2>My Books</h2>
+      <div class="library">
+
+      </div>
+    </div>
+
+    <footer>
+      <p>Designed by: Alejandro Viejo</p>
+    </footer>
+  </main>
+
+  </body>
+  </html>
+
